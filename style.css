@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    background-color: #e6ecf0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .fa-twitter {
+    color: #329cc3;
+    margin: 0.5vw;
+  }
+  
+  header {
+    background-color: white;
+    font-weight: bold;
+    color: gray;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 4vw;
+  }
+  
+  .toTweet {
+    height: 4vw;
+    width: 24vw;
+    border: none;
+    box-shadow: 0px 10px 28px -12px gray;
+  }
+  
+  .buttonArea {
+    margin-top: 0.5vw;
+    margin-bottom: 2.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 23vw;
+  }
+  
+  .button {
+    height: 3vw;
+    border-radius: 15px;
+    border: none;
+    padding: 0.5vw;
+    background-color: #d9d7c0;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    cursor: pointer;
+  }
+  
+  .activeButton {
+    background-color: #329cc3;
+  }
+  
+  .counter {
+    color: #329cc3;
+    font-weight: bolder;
+    font-size: larger;
+  }
+
+  .orangeCounter {
+    color: orange;
+  }
+
+  .redCounter {
+    color: red;
+  }
+  
+  .newPost {
+    background-color: white;
+    color: black;
+    width: 38vw;
+    border-top: 1px solid gray;
+    margin: 0;
+    padding: 1vw;
+    font-size: small;
+    /* Versão 0.0.4: aumentar a área de texto de acordo com o tamanho do texto. */
+    word-break: break-all;
+  }
+
+  .newPost span {
+    font-size: smaller;
+    font-weight: bold;
+    color: gray;
+  }
