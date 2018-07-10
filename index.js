@@ -44,6 +44,13 @@ function tweet() {
     var hour = new Date().getHours() + ":" + new Date().getMinutes();
   }
   newPost.innerHTML += '<br><span>' + hour + '</span>';
+  
+  document.querySelector('.toTweet').value = '';
+  document.querySelector('.toTweet').blur();
+  document.querySelector('.counter').innerHTML = '140';
+  var button = document.querySelector('.button');
+  button.removeEventListener('click', tweet);
+  button.classList.remove('activeButton');
 }
 
 /* Função para 'reload' na página */
