@@ -47,7 +47,10 @@ function tweet() {
   
   document.querySelector('.toTweet').value = '';
   document.querySelector('.toTweet').blur();
-  document.querySelector('.counter').innerHTML = '140';
+  var counter = document.querySelector('.counter');
+  counter.innerHTML = '140';
+  counter.classList.remove('orangeCounter');
+  counter.classList.remove('redCounter');
   var button = document.querySelector('.button');
   button.removeEventListener('click', tweet);
   button.classList.remove('activeButton');
